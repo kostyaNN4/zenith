@@ -1,0 +1,34 @@
+{
+  "name": "zenith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.zenith.app",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "kostyaNN4,
+        "repo": "zenith"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^44.8.0",
+    "electron-builder": "^25.1.8"
+  }
+}
